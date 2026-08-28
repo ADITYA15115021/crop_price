@@ -1,0 +1,7 @@
+.env
+tomato.csv
+__pycache__/
+*.pyc
+init_db.py
+seed_db.py
+scrap/

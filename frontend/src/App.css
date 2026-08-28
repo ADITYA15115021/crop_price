@@ -1,0 +1,8 @@
+.price-chart { margin-top: 1.5rem; padding: 1.5rem; background: #fff; border: 1px solid rgba(6, 78, 59, .12); border-radius: 1rem; box-shadow: 0 4px 18px rgba(6, 78, 59, .05); }
+.price-chart__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; }
+.price-chart__heading h2 { margin: 0; color: #022c22; font-size: 1.25rem; }
+.price-chart__heading p:not(.price-chart__eyebrow) { margin: .35rem 0 0; color: #64748b; font-size: .9rem; }
+.price-chart__eyebrow { margin: 0 0 .3rem; color: #047857; font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.price-chart__count { padding: .38rem .65rem; color: #065f46; font-size: .75rem; font-weight: 700; white-space: nowrap; background: #ecfdf5; border-radius: 999px; }
+.price-chart__canvas { min-height: 390px; }
+@media (max-width: 640px) { .price-chart { padding: 1rem; } .price-chart__heading { flex-direction: column; } }
