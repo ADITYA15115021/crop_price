@@ -3,8 +3,8 @@ from sqlalchemy import distinct, extract, select
 from sqlalchemy.orm import Session
 
 from backend.database import engine
-from models.price_record import PriceRecord
-from app.schemas.year import YearResponse
+from backend.models.price_record import PriceRecord
+from backend.app.schemas.year import YearResponse
 
 router = APIRouter()
 

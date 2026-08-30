@@ -3,8 +3,9 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from backend.database import engine
-from models.crops import Crop
-from app.schemas.crop import CropResponse
+
+from backend.models.crops import Crop
+from backend.app.schemas.crop import CropResponse
 
 router = APIRouter()
 

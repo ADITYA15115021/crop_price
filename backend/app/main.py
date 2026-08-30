@@ -1,9 +1,10 @@
 from fastapi import FastAPI
-from app.routes.prices import router as prices_router
-from app.routes.states import router as states_router
-from app.routes.crops import router as crops_router
-from app.routes.years import router as years_router
 from fastapi.middleware.cors import CORSMiddleware
+
+from backend.app.routes.prices import router as prices_router
+from backend.app.routes.states import router as states_router
+from backend.app.routes.crops import router as crops_router
+from backend.app.routes.years import router as years_router
 
 app = FastAPI(
     title="Agricultural Price API",

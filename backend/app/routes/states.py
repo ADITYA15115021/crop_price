@@ -3,8 +3,8 @@ from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from backend.database import engine
-from models.state import State
-from app.schemas.state import StateResponse
+from backend.models.state import State
+from backend.app.schemas.state import StateResponse
 
 router = APIRouter()
 

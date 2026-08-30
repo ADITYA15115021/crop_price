@@ -1,29 +1,23 @@
 from datetime import date
 
-from models.state import State
-from models.crops import Crop
-
 from fastapi import APIRouter, Query
 from sqlalchemy import select, extract, func
 from sqlalchemy.orm import Session
 
-
 from backend.database import engine
-from models.price_record import PriceRecord
-from app.schemas.price import PriceResponse, PriceSummary,StatePriceSummary,PriceTrend
-from app.schemas.price import StateCropPriceSummary
+from backend.models.state import State
+from backend.models.crops import Crop
+from backend.models.price_record import PriceRecord
+from backend.app.schemas.price import (
+    PriceResponse,
+    PriceSummary,
+    StatePriceSummary,
+    PriceTrend,
+    StateCropPriceSummary,
+)
+
 
 router = APIRouter()
-
-from fastapi import APIRouter, Query
-from sqlalchemy import extract, select
-from sqlalchemy.orm import Session
-
-from backend.database import engine
-from models.price_record import PriceRecord
-from app.schemas.price import PriceResponse
-
-
 
 @router.get("/prices", response_model=list[PriceResponse])
 def get_prices(
