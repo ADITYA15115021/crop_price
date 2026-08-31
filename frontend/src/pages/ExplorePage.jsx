@@ -1,6 +1,8 @@
 import { useState } from "react";
-import Filters from "../components/Filters";
-import PriceChart from "../components/PriceChart";
+
+import Filters from "../components/filters";
+import PriceChart from "../components/priceChart";
+
 import { getPrices, getPriceSummary, getPriceTrends } from "../api";
 
 const formatPrice = (value) => value == null ? "-" : new Intl.NumberFormat("en-IN", { maximumFractionDigits: 2 }).format(value);
