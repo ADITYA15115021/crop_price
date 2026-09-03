@@ -5,3 +5,4 @@ __pycache__/
 init_db.py
 seed_db.py
 scrap/
+codep/

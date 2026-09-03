@@ -45,3 +45,8 @@ app.include_router(
 @app.get("/")
 def root():
     return {"message": "Agricultural Price API"}
+
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}    
