@@ -1,0 +1,18 @@
+name: Keep Render Services Alive
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping crop-price
+        run: curl -fsS --max-time 120 https://crop-price-sxur.onrender.com/health
+
+      - name: Ping anon-feedback
+        run: curl -fsS --max-time 120 https://anonfeedback-xlge.onrender.com/health
