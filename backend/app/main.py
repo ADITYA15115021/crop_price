@@ -47,6 +47,6 @@ def root():
     return {"message": "Agricultural Price API"}
 
 
-@app.get("/health")
+@app.api_route("/health", methods=["GET", "HEAD"])
 def health():
-    return {"status": "ok"}    
+    return {"status": "ok"}
